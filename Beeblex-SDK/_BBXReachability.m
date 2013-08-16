@@ -153,6 +153,7 @@ static void bbxlogReachabilityFlags_(const char *name, int line, SCNetworkReacha
 	
 } // logReachabilityFlags_()
 
+#if 0 // Unused code
 #define logNetworkStatus(status) (logNetworkStatus_(__PRETTY_FUNCTION__, __LINE__, status))
 
 static void bbxlogNetworkStatus_(const char *name, int line, NetworkStatus status) {
@@ -174,6 +175,7 @@ static void bbxlogNetworkStatus_(const char *name, int line, NetworkStatus statu
 	NSLog(@"%s (%d) \n\tNetwork Status: %@", name, line, statusString);
 	
 } // logNetworkStatus_()
+#endif
 
 #else
 #define logReachabilityFlags(flags)
